@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Персональный сайт портфолио — Александр Петров</title>
+  <meta name="keywords" content="Верстальщик, Портфолио, Александр Петров, HTML, CSS, JS">
+  <meta name="description" content="Персональный сайт портфолио - Александр Петров">
+  <link rel="preload" href="fonts/BellotaText-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/BellotaText-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/AvenirNextCyr-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container">
+    <a class="logo header__logo" aria-label="Логотип">
+      <img loading="lazy" src="img/logo.svg" alt="Логотип">
+    </a>
+    <nav class="nav header__nav" data-menu>
+      <ul class="list-reset nav__list">
+        <li class="nav__item"><a href="#about" class="nav__link" data-scroll>Обо мне</a></li>
+        <li class="nav__item"><a href="#portfolio" class="nav__link" data-scroll>Портфолио</a></li>
+        <li class="nav__item"><a href="#contacts" class="nav__link" data-scroll>Контакты</a></li>
+      </ul>
+    </nav>
+    <a href="tel:+79218756495" class="header__tel">+7 921 875-64-95</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+      <span class="burger__line"></span>
+    </button>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero">
+  <div class="container hero__container">
+    <div class="hero__descr">
+      <h1 class="hero__title">
+        <span class="hero__subtitle">Привет, я -</span>
+        Александр Петров
+        <span class="hero__text">Веб-разработчик из Санкт-Петербурга, занимаюсь версткой и созданием сайтов.
+        </span>
+      </h1>
+    </div>
+  </div>
+</section>
+
+      <section class="about" id="about">
+  <div class="container">
+    <article class="about__me">
+      <picture>
+        <source srcset="./img/about.avif" type="image/avif">
+        <source srcset="./img/about.webp" type="image/webp">
+        <img loading="lazy" src="./img/about.png" class="image about__me-img" width="466px" height="699px"
+          alt="Фото Александр Петров">
+      </picture>
+      <div class="about__me-right">
+        <h2 class="title about__title">Обо мне</h2>
+        <span class="about__subtitle">Кто я?</span>
+        <p class="about__text">Я — HTML верстальщик сайтов.</p>
+        <p class="about__text"><span class="about__text--color">С сентября 2006 по июль 2011</span> учился в академии
+          туризма и предпринимательства на менеджера организаций.</p>
+        <p class="about__text"><span class="about__text--color">С февраля 2016 по июль 2018</span> учился на
+          веб-разработчика в Санкт-Петербургском государственном политехническом университете.</p>
+        <p class="about__text">А<span class="about__text--color"> в июле 2019</span> решил окончить онлайн курс «HTML
+          верстальщик» на <a href="https://webcademy.ru/" class="about__link">WebCademy.ru</a></p>
+      </div>
+    </article>
+    <article class="about__skills">
+      <h2 class="title about__title">Навыки</h2>
+      <span class="about__subtitle">Чем владею?</span>
+      <div class="about__skills-wrapper">
+        <ul class="list-reset about__skills-list">
+          <li class="about__skills-item">HTML5</li>
+          <li class="about__skills-item">CSS3 (SCCS)</li>
+          <li class="about__skills-item">JS</li>
+          <li class="about__skills-item">БЭМ нейминг</li>
+        </ul>
+        <ul class="list-reset about__skills-list">
+          <li class="about__skills-item">Адаптивная верстка</li>
+          <li class="about__skills-item">Валидная верстка</li>
+          <li class="about__skills-item">Piхel Perfect</li>
+          <li class="about__skills-item">GIT</li>
+        </ul>
+        <ul class="list-reset about__skills-list">
+          <li class="about__skills-item">Figma</li>
+          <li class="about__skills-item">Adobe Photoshop</li>
+          <li class="about__skills-item">Avocode</li>
+        </ul>
+      </div>
+    </article>
+    <article class="about__price">
+      <h2 class="title about__title">Стоимость</h2>
+      <span class="about__subtitle">Что предлагаю?</span>
+      <p class="about__text">Сделаю одностраничный сайт. <span class="about__text--color">Средняя стоимость 7 000 — 10
+          000р.</span> <br>Для более подробного расчёта — пишите.</p>
+    </article>
+  </div>
+</section>
+
+      <section class="portfolio" id="portfolio">
+  <div class="container portfolio__container">
+    <h2 class="title portfolio__title">Мои работы</h2>
+    <div class="tabs" data-tabs="portfolio">
+      <ul class="list-reset tabs__nav">
+        <li class="tabs__nav-item">
+          <button class="btn-reset tabs__nav-btn" data-path="all" type="button">Все</button>
+        </li>
+        <li class="tabs__nav-item">
+          <button class="btn-reset tabs__nav-btn" data-path="landing" type="button">Landing</button>
+        </li>
+        <li class="tabs__nav-item">
+          <button class="btn-reset tabs__nav-btn" data-path="wp" type="button">Wordpress</button>
+        </li>
+      </ul>
+      <div class="tabs__content">
+        <article class="tabs__panel tabs__panel--visible" data-target="landing">
+          <div class="tabs__panel-descr">
+            <a href="#" class="tabs__panel-title">Landing сайта-портфолио</a>
+            <p class="tabs__panel-text">Верстка личного сайта-портфолио.<br></p>
+            <p class="tabs__panel-cat">landing</p>
+          </div>
+          <picture>
+            <source srcset="./img/portfolio.avif" type="image/avif">
+            <source srcset="./img/portfolio.webp" type="image/webp">
+            <img loading="lazy" src="./img/portfolio.png" class="image" width="650px" height="377px"
+              alt="Макет личного сайта портфолио">
+          </picture>
+        </article>
+        <article class="tabs__panel tabs__panel--visible" data-target="wp">
+          <div class="tabs__panel-descr">
+            <a href="#" class="tabs__panel-title">Landing сайта Sunglasses-shop</a>
+            <p class="tabs__panel-text">Верстка лендинга хостинг компании c использованием Bootstrap.<br>Слайдер Owl
+              carousel</p>
+            <p class="tabs__panel-cat">Landing</p>
+          </div>
+          <picture>
+            <source srcset="./img/sunglasses.avif" type="image/avif">
+            <source srcset="./img/sunglasses.webp" type="image/webp">
+            <img loading="lazy" src="./img/sunglasses.png" class="image" width="650px" height="377px"
+              alt="Макет Sunglasses-shop">
+          </picture>
+        </article>
+        <article class="tabs__panel tabs__panel--visible" data-target="landing">
+          <div class="tabs__panel-descr">
+            <a href="#" class="tabs__panel-title">Landing сайта Apollo</a>
+            <p class="tabs__panel-text">Верстка лендинга хостинг компании с использованием Bootstrap. <br>
+              Анимация при скролле страницы (Animate.css Wow.js)</p>
+            <p class="tabs__panel-cat">Landing</p>
+          </div>
+          <picture>
+            <source srcset="./img/apollo.avif" type="image/avif">
+            <source srcset="./img/apollo.webp" type="image/webp">
+            <img loading="lazy" src="./img/apollo.png" class="image" width="650px" height="377px" alt="Макет Apollo">
+          </picture>
+        </article>
+      </div>
+      <div class="centered">
+        <button class="btn-reset portfolio__btn">Показать еще</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="contacts" id="contacts">
+  <div class="container centered">
+    <h2 class="title contacts__title">Контакты</h2>
+    <div class="contacts__descr">
+      <address class="contacts__text">Россия, г. Санкт-Петербург</address>
+      <a href="mailto:apweb-work@mail.ru" class="contacts__text">apweb-work@mail.ru</a>
+      <a href="tel:89218756495" class="contacts__text">+7 921 875-64-95</a>
+    </div>
+    <ul class="list-reset social">
+      <li class="social__item">
+        <a href="https://github.com/aleksandrp23" target="_blank" class="social__link" aria-label="Git">
+          <svg class="social__item-img social__item-img--git">
+            <use xlink:href="img/sprite.svg#git"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="https://www.fl.ru/users/s_a_s_h_a_5/opinions/#/" target="_blank" class="social__link" aria-label="Fl">
+          <svg class="social__item-img social__item-img--fl">
+            <use xlink:href="img/sprite.svg#fl"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="https://t.me/Aleksandr23_web" target="_blank" class="social__link" aria-label="Telegram">
+          <svg class="social__item-img social__item-img--telegram">
+            <use xlink:href="img/sprite.svg#telegram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="https://wa.me/79218756495" target="_blank" class="social__link" aria-label="Whatsup">
+          <svg class="social__item-img social__item-img--whatsup">
+            <use xlink:href="img/sprite.svg#whatsup"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="https://join.skype.com/invite/lFnldCKZxvBg" target="_blank" class="social__link" aria-label="Skype">
+          <svg class="social__item-img social__item-img--skype">
+            <use xlink:href="img/sprite.svg#skype"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <p class="footer__name">
+    <span class="footer__year">2022</span>
+    © Александр Петров
+  </p>
+</footer>
+
+  </div>
+</body>
+
+</html>
